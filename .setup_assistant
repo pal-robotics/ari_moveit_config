@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ari_description
+    relative_path: robots/ari.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/ari.srdf
+  CONFIG:
+    author_name: Sai Kishor Kothakota
+    author_email: sai.kishor@pal-robotics.com
+    generated_timestamp: 1572944275
