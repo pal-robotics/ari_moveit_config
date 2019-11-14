@@ -2,6 +2,11 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update ARI SRDF file
+* Contributors: Sai Kishor Kothakota
+
 0.0.1 (2019-11-12)
 ------------------
 * fix the package.xml version
