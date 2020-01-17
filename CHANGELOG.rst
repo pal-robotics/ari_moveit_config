@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2020-01-17)
+------------------
 * Merge branch 'moveit_fix' into 'master'
   fix moveit cartesian goals issue on robot
   See merge request robots/ari_moveit_config!2
