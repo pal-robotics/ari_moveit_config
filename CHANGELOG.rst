@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2020-03-24)
+------------------
 * Merge branch 'add-hands' into 'master'
   Add Hand joints to srdf
   See merge request robots/ari_moveit_config!3
