@@ -2,10 +2,10 @@ moveit_setup_assistant_config:
   URDF:
     package: ari_description
     relative_path: robots/ari.urdf.xacro
-    xacro_args: "--inorder "
+    xacro_args: end_effector_right:="ari-hand" end_effector_left:="ari-hand" spring_cameras:=false laser_model:="sick-571" camera_model:="head-rgb"
   SRDF:
     relative_path: config/ari.srdf
   CONFIG:
     author_name: Sai Kishor Kothakota
     author_email: sai.kishor@pal-robotics.com
-    generated_timestamp: 1572944275
+    generated_timestamp: 1620131998
