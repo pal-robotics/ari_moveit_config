@@ -2,6 +2,19 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ari_laser_new' into 'master'
+  Ari laser new
+  See merge request robots/ari_moveit_config!4
+* Update launch/move_group.launch
+* Update launch/move_group.launch
+* Update launch/move_group.launch
+* Deleted redundant
+* Added laser ari srdf
+* Added laser ari srdf
+* Contributors: davidfernandez, sergiomoyano
+
 0.0.4 (2020-03-24)
 ------------------
 * Merge branch 'add-hands' into 'master'
