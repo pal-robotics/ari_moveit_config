@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2021-05-20)
+------------------
 * Merge branch 'ari_laser_new' into 'master'
   Ari laser new
   See merge request robots/ari_moveit_config!4
