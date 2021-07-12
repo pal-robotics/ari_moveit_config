@@ -7,9 +7,9 @@
 
   <!-- Load universal robot description format (URDF) -->
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="xacro --inorder  '$(find ari_description)/robots/ari.urdf.xacro'"/>
-  <arg name="laser_model" default="No"/>
+  <arg name="laser_model" default="false"/>
   <!-- The semantic description that corresponds to the URDF -->
-  <arg name="srdf" default="$(eval 'ari.srdf' if arg('laser_model') == 'No' else 'ari_laser.srdf' )"/>
+  <arg name="srdf" default="$(eval 'ari.srdf' if arg('laser_model') == 'false' else 'ari_laser.srdf' )"/>
   <param name="$(arg robot_description)_semantic" textfile="$(find ari_moveit_config)/config/$(arg srdf)"/>
 
   <!-- Load updated joint limits (override information from URDF) -->

@@ -1,5 +1,5 @@
 <launch>
-  <arg name="laser_model" default="No"/>
+  <arg name="laser_model" default="false"/>
   <include file="$(find ari_moveit_config)/launch/planning_context.launch">>
          <arg name="laser_model" value="$(arg laser_model)"/>
     </include>
