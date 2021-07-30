@@ -2,6 +2,15 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fixing_laser_model' into 'master'
+  fixing laser_model set default false
+  See merge request robots/ari_moveit_config!5
+* Fixed laser_suffix that manages both cases when laser_model is bool and when is a string
+* fixing laser_model set default false
+* Contributors: antoniobrandi, saikishor
+
 0.0.5 (2021-05-20)
 ------------------
 * Merge branch 'ari_laser_new' into 'master'
