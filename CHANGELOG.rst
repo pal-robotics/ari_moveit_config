@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2021-07-30)
+------------------
 * Merge branch 'fixing_laser_model' into 'master'
   fixing laser_model set default false
   See merge request robots/ari_moveit_config!5
