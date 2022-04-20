@@ -15,6 +15,9 @@
 
   <!-- Load the robot specific controller manager; this sets the moveit_controller_manager ROS parameter -->
   <arg name="moveit_controller_manager" default="ari" />
-  <include file="$(find ari_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml" />
+  <arg name="robot_model" default="v1" />
+  <include file="$(find ari_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml">
+    <arg name="robot_model" value="$(arg robot_model)" />
+  </include>
 
 </launch>
