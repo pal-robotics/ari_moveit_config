@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <launch>
-
+  <arg name="robot_model" default="v1"/>
   <!-- Load joint controller configurations from YAML file to parameter server -->
-  <rosparam file="$(find ari_moveit_config)/config/ros_controllers.yaml" command="load"/>
+  <rosparam file="$(find ari_moveit_config)/config/ros_controllers_$(arg robot_model).yaml" command="load"/>
 
   <!-- Load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
