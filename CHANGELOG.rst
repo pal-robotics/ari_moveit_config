@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.7 (2022-05-30)
+------------------
 * Merge branch 'ari-v2' into 'master'
   update launch an config files for different robot_versions
   See merge request robots/ari_moveit_config!6
