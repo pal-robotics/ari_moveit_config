@@ -2,6 +2,18 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ari-v2' into 'master'
+  update launch an config files for different robot_versions
+  See merge request robots/ari_moveit_config!6
+* Fix ompl launch file typo
+* Fix typo in controller_v2.yaml
+* disable collision checking for docking link
+* remove redundant whiteline
+* update launch an config files for different robot_versions
+* Contributors: David ter Kuile, davidfernandez
+
 0.0.6 (2021-07-30)
 ------------------
 * Merge branch 'fixing_laser_model' into 'master'
