@@ -20,8 +20,10 @@ ari:
       - arm_right_3_joint
       - arm_right_4_joint
       - arm_right_5_joint
-      - caster_left_joint
-      - caster_right_joint
+      - caster_left_1_joint
+      - caster_right_1_joint
+      - caster_left_2_joint
+      - caster_right_2_joint
       - head_1_joint
       - head_2_joint
       - wheel_left_joint
