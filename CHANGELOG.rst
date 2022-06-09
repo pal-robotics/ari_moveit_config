@@ -2,6 +2,15 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ari-v2' into 'master'
+  Add controllers for additional caster joints in v2
+  See merge request robots/ari_moveit_config!8
+* Update srdf for ari-v2 with extra caster link
+* Add controllers for additional caster joints in v2
+* Contributors: David ter Kuile, Luca Marchionni, davidfernandez
+
 0.0.7 (2022-05-30)
 ------------------
 * Merge branch 'ari-v2' into 'master'
