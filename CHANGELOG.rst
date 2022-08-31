@@ -2,6 +2,14 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'gallium-fix' into 'master'
+  Add default_velocity_scaling_factor to avoid slow movements
+  See merge request robots/ari_moveit_config!7
+* Add default_velocity_scaling_factor to avoid slow movements
+* Contributors: David ter Kuile, davidfernandez
+
 0.0.8 (2022-06-09)
 ------------------
 * Merge branch 'ari-v2' into 'master'
