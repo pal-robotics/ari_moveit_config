@@ -2,6 +2,20 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ros2-port' into 'humble-devel'
+  port to ROS2
+  See merge request robots/ari_moveit_config!9
+* use_sime_time false by default
+* add CONTRIBUTING.md + LICENSE
+* port to ROS2
+  Requires https://gitlab/robots/ari_robot/-/merge_requests/70
+  Most of the existing launch files have been removed.
+  If necessary, they can be re-introduced on an ad-hoc basis.
+  Heavily based on similar work for TIAGo.
+* Contributors: Jordan Palacios, Séverin Lemaignan
+
 0.0.9 (2022-08-31)
 ------------------
 * Merge branch 'gallium-fix' into 'master'
