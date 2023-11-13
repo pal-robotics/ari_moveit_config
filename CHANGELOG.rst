@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.10 (2023-11-13)
+-------------------
 * Merge branch 'ros2-port' into 'humble-devel'
   port to ROS2
   See merge request robots/ari_moveit_config!9
