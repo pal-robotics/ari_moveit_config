@@ -86,6 +86,7 @@ def launch_setup(context, *args, **kwargs):
         parameters=[
             use_sim_time,
             moveit_config.to_dict(),
+            {'publish_robot_description_semantic': True}
         ],
     )
 
