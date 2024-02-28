@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.11 (2024-02-28)
+-------------------
 * Merge branch 'feat/publish_description_semantic' into 'humble-devel'
   Publish robot_description_semantic
   See merge request robots/ari_moveit_config!10
