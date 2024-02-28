@@ -2,6 +2,14 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'feat/publish_description_semantic' into 'humble-devel'
+  Publish robot_description_semantic
+  See merge request robots/ari_moveit_config!10
+* Publish robot_description_semantic
+* Contributors: Jordan Palacios, Noel Jimenez
+
 1.0.10 (2023-11-13)
 -------------------
 * Merge branch 'ros2-port' into 'humble-devel'
