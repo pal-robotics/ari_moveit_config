@@ -38,12 +38,6 @@ def declare_args(context, *args, **kwargs):
 def launch_setup(context, *args, **kwargs):
 
     robot_model = read_launch_argument('robot_model', context)
-    mappings = {
-        'robot_model': robot_model,
-    }
-
-    robot_description_path = os.path.join(
-        get_package_share_directory('ari_description'), 'robots', 'ari.urdf.xacro')
 
     robot_description_semantic = (
         f'config/ari{get_ari_hw_suffix(robot_model=robot_model)}.srdf')
@@ -55,9 +49,9 @@ def launch_setup(context, *args, **kwargs):
     moveit_simple_controllers_path = (
         f'config/controllers/controllers{get_ari_hw_suffix(robot_model=robot_model)}.yaml')
 
+    # The robot description is read from the topic /robot_description if the parameter is empty
     moveit_config = (
         MoveItConfigsBuilder('ari')
-        .robot_description(file_path=robot_description_path, mappings=mappings)
         .robot_description_semantic(file_path=robot_description_semantic)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics.yaml'))
         .joint_limits(file_path=joint_limits)
