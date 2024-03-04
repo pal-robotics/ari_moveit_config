@@ -2,6 +2,18 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix/install_setup_assistant' into 'humble-devel'
+  Install the moveit setup assistant to avoid some warnings
+  See merge request robots/ari_moveit_config!12
+* Install the moveit setup assistant to avoid some warnings
+* Merge branch 'feat/use_robot_description_from_topic' into 'humble-devel'
+  Read robot_description from the topic
+  See merge request robots/ari_moveit_config!11
+* Read robot_description from the topic
+* Contributors: Jordan Palacios, Noel Jimenez, davidterkuile
+
 1.0.11 (2024-02-28)
 -------------------
 * Merge branch 'feat/publish_description_semantic' into 'humble-devel'
