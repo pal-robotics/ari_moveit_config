@@ -2,6 +2,9 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.9 (2022-08-31)
 ------------------
 * Merge branch 'gallium-fix' into 'master'
