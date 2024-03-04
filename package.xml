@@ -1,6 +1,6 @@
 <package format="3">
   <name>ari_moveit_config</name>
-  <version>1.0.11</version>
+  <version>1.0.12</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the ari with the MoveIt! Motion Planning Framework
   </description>

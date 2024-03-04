@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.12 (2024-03-04)
+-------------------
 * Merge branch 'fix/install_setup_assistant' into 'humble-devel'
   Install the moveit setup assistant to avoid some warnings
   See merge request robots/ari_moveit_config!12
