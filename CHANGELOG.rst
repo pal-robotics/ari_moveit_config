@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.13 (2024-03-06)
+-------------------
 * Merge branch 'fix/revert_setup_assistant_installation' into 'humble-devel'
   Revert "Install the moveit setup assistant to avoid some warnings"
   See merge request robots/ari_moveit_config!13
