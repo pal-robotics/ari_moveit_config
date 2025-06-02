@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2025-06-02)
+------------------
 * Port config files for controllers and sensors
 * Group parameters in a variable
 * Set robot_description_timeout to 60 seconds
