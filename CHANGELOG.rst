@@ -2,6 +2,14 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Port config files for controllers and sensors
+* Group parameters in a variable
+* Set robot_description_timeout to 60 seconds
+* Enable log colors for move_group and rviz nodes
+* Contributors: Noel Jimenez
+
 1.0.13 (2024-03-06)
 -------------------
 * Merge branch 'fix/revert_setup_assistant_installation' into 'humble-devel'
