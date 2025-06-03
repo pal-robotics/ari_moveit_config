@@ -2,6 +2,11 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Adapt ompl_planning config for ROS 2
+* Contributors: Noel Jimenez
+
 1.1.0 (2025-06-02)
 ------------------
 * Port config files for controllers and sensors
