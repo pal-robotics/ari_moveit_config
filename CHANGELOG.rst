@@ -2,6 +2,11 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed warnings camera_link
+* Contributors: andreacapodacqua
+
 1.2.0 (2025-06-03)
 ------------------
 * Adapt ompl_planning config for ROS 2
