@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.1 (2025-06-26)
+------------------
 * fixed warnings camera_link
 * Contributors: andreacapodacqua
 
