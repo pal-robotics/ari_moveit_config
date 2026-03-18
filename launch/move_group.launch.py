@@ -19,18 +19,18 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
 from launch_pal.arg_utils import LaunchArgumentsBase, read_launch_argument
-from launch_pal.robot_utils import get_robot_model, get_robot_name
+from launch_pal.robot_arguments import CommonArgs
 from launch_ros.actions import Node
 
 from moveit_configs_utils import MoveItConfigsBuilder
 from ari_description.ari_launch_utils import get_ari_hw_suffix
+from ari_description.launch_arguments import AriArgs
 
 
 @dataclass(frozen=True)
 class LaunchArguments(LaunchArgumentsBase):
-    use_sim_time: DeclareLaunchArgument = DeclareLaunchArgument(
-        'use_sim_time', default_value='False', description='Use sim time'
-    )
+    use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
+    robot_model: DeclareLaunchArgument = AriArgs.robot_model
 
 
 def generate_launch_description():
@@ -48,19 +48,10 @@ def generate_launch_description():
 def declare_actions(
     launch_description: LaunchDescription, launch_args: LaunchArguments
 ):
-    launch_description.add_action(get_robot_name('ari'))
-    launch_description.add_action(OpaqueFunction(function=declare_args))
 
     # Execute move_group node setup
     launch_description.add_action(OpaqueFunction(function=start_move_group))
     return
-
-
-def declare_args(context, *args, **kwargs):
-    robot_name = read_launch_argument('robot_name', context)
-
-    # ari description arguments
-    return [get_robot_model(robot_name)]
 
 
 def start_move_group(context, *args, **kwargs):
