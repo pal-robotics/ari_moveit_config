@@ -13,18 +13,49 @@
 # limitations under the License.
 
 import os
+from dataclasses import dataclass
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
-from launch_pal.arg_utils import read_launch_argument
-from launch_pal.robot_utils import (get_robot_model,
-                                    get_robot_name)
+from launch_pal.arg_utils import LaunchArgumentsBase, read_launch_argument
+from launch_pal.robot_arguments import CommonArgs
+from launch_pal.robot_utils import get_robot_model, get_robot_name
 from launch_ros.actions import Node
 
 from moveit_configs_utils import MoveItConfigsBuilder
 from ari_description.ari_launch_utils import get_ari_hw_suffix
+
+
+@dataclass(frozen=True)
+class LaunchArguments(LaunchArgumentsBase):
+    use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
+
+
+def generate_launch_description():
+
+    # Create the launch description and populate
+    ld = LaunchDescription()
+    launch_arguments = LaunchArguments()
+
+    launch_arguments.add_to_launch_description(ld)
+
+    declare_actions(ld, launch_arguments)
+
+    return ld
+
+
+def declare_actions(
+    launch_description: LaunchDescription, launch_args: LaunchArguments
+):
+    # ARI specific: we use OpaqueFunction so the callbacks have access to the context
+    launch_description.add_action(get_robot_name('ari'))
+    launch_description.add_action(OpaqueFunction(function=declare_args))
+
+    # Execute the RViz setup
+    launch_description.add_action(OpaqueFunction(function=start_rviz))
+    return
 
 
 def declare_args(context, *args, **kwargs):
@@ -35,7 +66,7 @@ def declare_args(context, *args, **kwargs):
     return [get_robot_model(robot_name)]
 
 
-def launch_setup(context, *args, **kwargs):
+def start_rviz(context, *args, **kwargs):
 
     robot_model = read_launch_argument('robot_model', context)
 
@@ -84,23 +115,3 @@ def launch_setup(context, *args, **kwargs):
     )
 
     return [rviz_node]
-
-
-def generate_launch_description():
-
-    sim_time_arg = DeclareLaunchArgument(
-        'use_sim_time', default_value='False', description='Use sim time'
-    )
-
-    ld = LaunchDescription()
-
-    # Declare arguments
-    # we use OpaqueFunction so the callbacks have access to the context
-    ld.add_action(get_robot_name('ari'))
-    ld.add_action(OpaqueFunction(function=declare_args))
-    ld.add_action(sim_time_arg)
-
-    # Execute move_group node
-    ld.add_action(OpaqueFunction(function=launch_setup))
-
-    return ld
