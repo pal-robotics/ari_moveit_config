@@ -2,6 +2,13 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix moveit configuration ros2
+* adapting launch style
+* adapting launch style
+* Contributors: silviamasiello
+
 1.2.1 (2025-06-26)
 ------------------
 * fixed warnings camera_link
