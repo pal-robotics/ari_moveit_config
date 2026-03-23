@@ -2,8 +2,8 @@
 Changelog for package ari_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.0 (2026-03-23)
+------------------
 * fix moveit configuration ros2
 * adapting launch style
 * adapting launch style
