@@ -1,8 +1,10 @@
 moveit_controller_manager: moveit_ros_control_interface/Ros2ControlManager
 moveit_simple_controller_manager:
   controller_names:
-  - arm_left_controller
-  - arm_right_controller
+    - arm_left_controller
+    - arm_right_controller
+    - hand_left_controller
+    - hand_right_controller
 
   arm_left_controller:
     action_ns: follow_joint_trajectory
@@ -13,6 +15,7 @@ moveit_simple_controller_manager:
       - arm_left_2_joint
       - arm_left_3_joint
       - arm_left_4_joint
+      
   arm_right_controller:
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
@@ -22,3 +25,17 @@ moveit_simple_controller_manager:
       - arm_right_2_joint
       - arm_right_3_joint
       - arm_right_4_joint
+
+  hand_left_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - hand_left_fingers_joint
+
+  hand_right_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - hand_right_fingers_joint
