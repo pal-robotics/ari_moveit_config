@@ -1,2 +1,3 @@
 move_group:
-  launch: "ari_moveit_config move_group.launch.py"
+  launch: "ari_moveit_config move_group.launch.py
+          robot_model:=@robot_model@"
